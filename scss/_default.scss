@@ -1,0 +1,307 @@
+@import "_colors";
+
+
+a,
+.btn,
+.s-card__icon {
+	transition: .27s all ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+	font-weight: bold;
+	font-style: normal;
+	line-height: 1.222;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+h1 {
+	font-size: 44px;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+	font-size: 21px;
+}
+
+a {
+	color: $red;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		color: $red;
+		text-decoration: underline;
+	}
+}
+
+.w-max {
+	width: 100%;
+	height: auto;
+}
+
+.h-max {
+	height: 100%;
+	width: auto;
+}
+
+.text-red {
+	color: $red;
+}
+
+.text-white {
+	color: $white;
+}
+
+.text-main {
+	color: $main;
+}
+
+.text-xs {
+	font-size: 16px;
+}
+
+.text-bold {
+	font-weight: bold;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+
+.m-0 {
+	margin: 0;
+}
+
+.mt-0 {
+	margin-top: 0;
+}
+
+.mb-0 {
+	margin-bottom: 0;
+}
+
+.mb-40 {
+	margin-bottom: 40px;
+}
+
+.p-0 {
+	padding: 0;
+}
+
+.pt-0 {
+	padding-top: 0;
+}
+
+.pb-0 {
+	padding-bottom: 0;
+}
+
+
+.col-30 {
+	flex: 0 1 35%;
+}
+
+.col-50 {
+	flex: 0 1 50%;
+}
+
+.col-70 {
+	flex: 0 1 65%;
+}
+
+.col-100 {
+	flex: 0 1 100%;
+}
+
+.section {
+	padding: 100px 0;
+
+	&:before,
+	&:after {
+		clear: both;
+		content: " ";
+		display: table;
+		box-sizing: border-box;
+	}
+}
+
+.section-sm {
+	padding: 50px 0;
+
+	&:before,
+	&:after {
+		clear: both;
+		content: " ";
+		display: table;
+		box-sizing: border-box;
+	}
+}
+
+.bg-texture-1 {
+	background-image: url("../img/texture-1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg-texture-2 {
+	background-image: url("../img/texture-2.png");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: bottom;
+}
+
+// Buttons
+.btn-wrap {
+	text-align: center;
+	
+	.btn {
+		margin: 2px 5px;
+	}
+}
+
+.btn {
+	font-family: 'Myriad Pro';
+	font-weight: bold;
+	font-style: normal;
+	font-size: 18px;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 16px 36px;
+	border-radius: 4px;
+	text-align: center;
+	border: 1px solid transparent;
+	cursor: pointer;
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+		outline: none;
+	}
+	>i {
+		margin-right: 10px;
+	}
+}
+
+.btn-default {
+	background-color: $red;
+	color: $white;
+
+	&:hover,
+	&:focus {
+		background-color: $red;
+		border-color: $red;
+		color: $white;
+		box-shadow: none;
+	}
+}
+
+.btn-white {
+	background-color: $white;
+	color: $main;
+	border-color: $white;
+
+	&:hover,
+	&:focus {
+		background-color: $red;
+		color: $white;
+		border-color: $red;
+	}
+}
+
+.btn-green {
+	background-color: $green;
+	color: $white;
+	border-color: $green;
+
+	&:hover,
+	&:focus {
+		background-color: $green;
+		color: $white;
+		border-color: $green;
+	}
+}
+
+.btn-dark {
+	background-color: $main;
+	color: $white;
+	border-color: $main;
+
+	&:hover,
+	&:focus {
+		background-color: $red;
+		color: $white;
+		border-color: $red;
+	}
+}
+
+.btn.btn-icon {
+	padding: 6px;
+	width: 60px;
+	height: 60px;
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-content: stretch;
+	align-items: center;
+
+	i {
+		vertical-align: middle;
+		font-size: 19px;
+		margin: 0;
+	}
+}
+// Buttons END
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-content: stretch;
+	align-items: stretch;
+}
+
+.col-4 {
+	flex: 0 1 40%;
+	padding: 15px;
+}
+
+.col-6 {
+	flex: 0 1 60%;
+	padding: 15px;
+}
+
+.form-control {
+	border: none;
+	height: 54px;
+	border: 1px solid transparent;
+
+	&:focus {
+		outline: none;
+		box-shadow: none;
+		border: 1px solid $green;
+	}
+}
